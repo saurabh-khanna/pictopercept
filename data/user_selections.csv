@@ -1,0 +1,145 @@
+file,age,gender,race,clicked,userid,item
+train/16547.jpg,40-49,Female,White,1.0,967d97ba-3ea9-408b-976f-85987efeb694,1.0
+train/53458.jpg,20-29,Male,Middle Eastern,0.0,967d97ba-3ea9-408b-976f-85987efeb694,1.0
+train/75879.jpg,20-29,Male,Latino_Hispanic,0.0,967d97ba-3ea9-408b-976f-85987efeb694,2.0
+train/49431.jpg,20-29,Female,Indian,1.0,967d97ba-3ea9-408b-976f-85987efeb694,2.0
+train/18083.jpg,20-29,Male,Black,0.0,967d97ba-3ea9-408b-976f-85987efeb694,3.0
+train/35178.jpg,20-29,Male,East Asian,1.0,967d97ba-3ea9-408b-976f-85987efeb694,3.0
+train/54379.jpg,30-39,Male,Indian,0.0,03ef552e-cfa4-434a-9640-2a60b70ff7c7,1.0
+train/29686.jpg,40-49,Male,Black,1.0,03ef552e-cfa4-434a-9640-2a60b70ff7c7,1.0
+train/24768.jpg,20-29,Female,White,1.0,03ef552e-cfa4-434a-9640-2a60b70ff7c7,2.0
+train/34461.jpg,20-29,Male,Middle Eastern,0.0,03ef552e-cfa4-434a-9640-2a60b70ff7c7,2.0
+train/61649.jpg,20-29,Male,Southeast Asian,1.0,e981d480-672a-4390-bdf5-c8eb99b5a378,1.0
+train/20707.jpg,20-29,Female,Indian,0.0,e981d480-672a-4390-bdf5-c8eb99b5a378,1.0
+train/29779.jpg,20-29,Male,Southeast Asian,0.0,e981d480-672a-4390-bdf5-c8eb99b5a378,2.0
+train/83092.jpg,30-39,Female,East Asian,1.0,e981d480-672a-4390-bdf5-c8eb99b5a378,2.0
+train/10129.jpg,30-39,Male,Black,1.0,70eea9d9-130e-47da-a936-c1f001cb8445,1.0
+train/6700.jpg,20-29,Female,Southeast Asian,0.0,70eea9d9-130e-47da-a936-c1f001cb8445,1.0
+train/76718.jpg,20-29,Male,East Asian,1.0,0d5950d1-8e44-415d-ade7-583dd6de2dce,1.0
+train/29382.jpg,30-39,Female,Middle Eastern,0.0,0d5950d1-8e44-415d-ade7-583dd6de2dce,1.0
+train/14303.jpg,20-29,Male,Black,0.0,6cb955e0-529c-43f1-9001-8ed0f3662282,1.0
+train/1724.jpg,20-29,Male,Southeast Asian,1.0,6cb955e0-529c-43f1-9001-8ed0f3662282,1.0
+train/19748.jpg,50-59,Male,Latino_Hispanic,1.0,6cb955e0-529c-43f1-9001-8ed0f3662282,2.0
+train/14951.jpg,40-49,Male,Latino_Hispanic,0.0,6cb955e0-529c-43f1-9001-8ed0f3662282,2.0
+train/3641.jpg,40-49,Male,Latino_Hispanic,0.0,6cb955e0-529c-43f1-9001-8ed0f3662282,3.0
+train/79119.jpg,30-39,Male,East Asian,1.0,6cb955e0-529c-43f1-9001-8ed0f3662282,3.0
+train/67845.jpg,20-29,Male,Southeast Asian,1.0,6cb955e0-529c-43f1-9001-8ed0f3662282,4.0
+train/25082.jpg,20-29,Female,Latino_Hispanic,0.0,6cb955e0-529c-43f1-9001-8ed0f3662282,4.0
+train/39946.jpg,30-39,Male,Latino_Hispanic,1.0,5cf21fac-4c4c-47e7-9eed-da53991205bb,1.0
+train/77788.jpg,20-29,Female,Middle Eastern,0.0,5cf21fac-4c4c-47e7-9eed-da53991205bb,1.0
+train/34322.jpg,20-29,Female,Latino_Hispanic,1.0,5cf21fac-4c4c-47e7-9eed-da53991205bb,2.0
+train/43106.jpg,20-29,Male,Black,0.0,5cf21fac-4c4c-47e7-9eed-da53991205bb,2.0
+train/58257.jpg,30-39,Male,Southeast Asian,1.0,d3a393e4-be07-4845-8883-e255755dbd08,1.0
+train/22953.jpg,20-29,Male,East Asian,0.0,d3a393e4-be07-4845-8883-e255755dbd08,1.0
+train/58710.jpg,20-29,Male,Black,0.0,d3a393e4-be07-4845-8883-e255755dbd08,2.0
+train/37279.jpg,40-49,Female,Latino_Hispanic,1.0,d3a393e4-be07-4845-8883-e255755dbd08,2.0
+train/20873.jpg,50-59,Male,East Asian,1.0,298cf6eb-741f-4da2-9e45-cdcb036b8ad4,1.0
+train/26850.jpg,20-29,Male,Southeast Asian,0.0,298cf6eb-741f-4da2-9e45-cdcb036b8ad4,1.0
+train/70.jpg,30-39,Male,Indian,0.0,298cf6eb-741f-4da2-9e45-cdcb036b8ad4,2.0
+train/50980.jpg,20-29,Male,East Asian,1.0,298cf6eb-741f-4da2-9e45-cdcb036b8ad4,2.0
+train/33604.jpg,50-59,Female,Southeast Asian,0.0,c3590bde-a6de-4655-8406-44c57e305b70,1.0
+train/42678.jpg,20-29,Female,Latino_Hispanic,1.0,c3590bde-a6de-4655-8406-44c57e305b70,1.0
+train/29951.jpg,more than 70,Female,East Asian,1.0,c3590bde-a6de-4655-8406-44c57e305b70,2.0
+train/66851.jpg,more than 70,Female,Indian,0.0,c3590bde-a6de-4655-8406-44c57e305b70,2.0
+train/66089.jpg,50-59,Male,Latino_Hispanic,1.0,c3590bde-a6de-4655-8406-44c57e305b70,3.0
+train/69569.jpg,30-39,Female,Middle Eastern,0.0,c3590bde-a6de-4655-8406-44c57e305b70,3.0
+train/7427.jpg,40-49,Female,Latino_Hispanic,0.0,c3590bde-a6de-4655-8406-44c57e305b70,4.0
+train/46566.jpg,60-69,Male,Latino_Hispanic,1.0,c3590bde-a6de-4655-8406-44c57e305b70,4.0
+train/32498.jpg,30-39,Male,White,1.0,c3590bde-a6de-4655-8406-44c57e305b70,5.0
+train/52974.jpg,20-29,Male,White,0.0,c3590bde-a6de-4655-8406-44c57e305b70,5.0
+train/55532.jpg,40-49,Male,Latino_Hispanic,0.0,c3590bde-a6de-4655-8406-44c57e305b70,6.0
+train/55128.jpg,40-49,Male,Southeast Asian,1.0,c3590bde-a6de-4655-8406-44c57e305b70,6.0
+train/59222.jpg,20-29,Male,Indian,0.0,c3590bde-a6de-4655-8406-44c57e305b70,7.0
+train/37666.jpg,20-29,Female,Indian,1.0,c3590bde-a6de-4655-8406-44c57e305b70,7.0
+train/24981.jpg,20-29,Male,Indian,0.0,c3590bde-a6de-4655-8406-44c57e305b70,8.0
+train/23663.jpg,30-39,Female,East Asian,1.0,c3590bde-a6de-4655-8406-44c57e305b70,8.0
+train/57156.jpg,20-29,Male,Black,1.0,c3590bde-a6de-4655-8406-44c57e305b70,9.0
+train/17011.jpg,40-49,Female,Black,0.0,c3590bde-a6de-4655-8406-44c57e305b70,9.0
+train/44569.jpg,20-29,Male,East Asian,1.0,c3590bde-a6de-4655-8406-44c57e305b70,10.0
+train/57923.jpg,60-69,Female,Latino_Hispanic,0.0,c3590bde-a6de-4655-8406-44c57e305b70,10.0
+train/41715.jpg,40-49,Male,White,0.0,c3590bde-a6de-4655-8406-44c57e305b70,11.0
+train/78800.jpg,20-29,Male,Indian,1.0,c3590bde-a6de-4655-8406-44c57e305b70,11.0
+train/68137.jpg,20-29,Female,Indian,0.0,c3590bde-a6de-4655-8406-44c57e305b70,12.0
+train/59073.jpg,40-49,Female,Southeast Asian,1.0,c3590bde-a6de-4655-8406-44c57e305b70,12.0
+train/27402.jpg,20-29,Male,Indian,1.0,c3590bde-a6de-4655-8406-44c57e305b70,13.0
+train/20261.jpg,40-49,Female,Southeast Asian,0.0,c3590bde-a6de-4655-8406-44c57e305b70,13.0
+train/35056.jpg,20-29,Male,Middle Eastern,1.0,c3590bde-a6de-4655-8406-44c57e305b70,14.0
+train/21138.jpg,60-69,Male,Southeast Asian,0.0,c3590bde-a6de-4655-8406-44c57e305b70,14.0
+train/73516.jpg,40-49,Male,Black,0.0,c3590bde-a6de-4655-8406-44c57e305b70,15.0
+train/65573.jpg,30-39,Male,Middle Eastern,1.0,c3590bde-a6de-4655-8406-44c57e305b70,15.0
+train/68675.jpg,40-49,Male,Southeast Asian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,1.0
+train/26157.jpg,30-39,Male,Black,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,1.0
+train/75231.jpg,40-49,Female,White,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,2.0
+train/45115.jpg,40-49,Female,White,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,2.0
+train/40211.jpg,20-29,Female,Latino_Hispanic,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,3.0
+train/65072.jpg,20-29,Male,White,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,3.0
+train/70319.jpg,20-29,Female,White,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,4.0
+train/29056.jpg,60-69,Female,White,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,4.0
+train/80132.jpg,50-59,Male,Indian,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,5.0
+train/21216.jpg,30-39,Female,White,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,5.0
+train/33483.jpg,20-29,Male,Black,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,6.0
+train/61138.jpg,30-39,Male,East Asian,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,6.0
+train/67880.jpg,20-29,Female,Middle Eastern,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,7.0
+train/22474.jpg,20-29,Female,White,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,7.0
+train/18639.jpg,20-29,Male,Middle Eastern,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,8.0
+train/52039.jpg,40-49,Female,White,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,8.0
+train/23956.jpg,50-59,Male,Latino_Hispanic,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,9.0
+train/55253.jpg,50-59,Male,Latino_Hispanic,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,9.0
+train/14669.jpg,20-29,Female,Indian,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,10.0
+train/28575.jpg,20-29,Male,Indian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,10.0
+train/51534.jpg,50-59,Female,Southeast Asian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,11.0
+train/32694.jpg,20-29,Male,Indian,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,11.0
+train/40907.jpg,20-29,Female,Indian,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,12.0
+train/77154.jpg,20-29,Female,Southeast Asian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,12.0
+train/55410.jpg,30-39,Male,Southeast Asian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,13.0
+train/59037.jpg,20-29,Female,Indian,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,13.0
+train/25164.jpg,30-39,Male,Indian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,14.0
+train/38838.jpg,20-29,Male,Black,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,14.0
+train/9586.jpg,20-29,Male,Southeast Asian,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,15.0
+train/49364.jpg,50-59,Male,Middle Eastern,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,15.0
+train/9094.jpg,40-49,Male,Southeast Asian,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,16.0
+train/74076.jpg,30-39,Male,Southeast Asian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,16.0
+train/19631.jpg,30-39,Female,East Asian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,17.0
+train/45810.jpg,20-29,Male,Southeast Asian,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,17.0
+train/65507.jpg,20-29,Female,Latino_Hispanic,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,18.0
+train/46857.jpg,20-29,Female,Indian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,18.0
+train/31002.jpg,40-49,Female,Middle Eastern,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,19.0
+train/51106.jpg,20-29,Female,Black,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,19.0
+train/3953.jpg,20-29,Female,White,0.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,20.0
+train/15350.jpg,40-49,Male,East Asian,1.0,03ea3934-c1a5-41bf-93ab-2f6854fb80b0,20.0
+train/74838.jpg,30-39,Female,East Asian,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,1.0
+train/23461.jpg,20-29,Male,Latino_Hispanic,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,1.0
+train/7514.jpg,20-29,Male,Latino_Hispanic,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,2.0
+train/73891.jpg,30-39,Male,East Asian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,2.0
+train/50006.jpg,20-29,Female,Black,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,3.0
+train/34096.jpg,40-49,Male,Middle Eastern,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,3.0
+train/85382.jpg,30-39,Male,Latino_Hispanic,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,4.0
+train/83359.jpg,20-29,Female,Indian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,4.0
+train/59106.jpg,20-29,Female,Southeast Asian,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,5.0
+train/6444.jpg,20-29,Male,Indian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,5.0
+train/43122.jpg,40-49,Male,East Asian,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,6.0
+train/9651.jpg,30-39,Male,Southeast Asian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,6.0
+train/60071.jpg,40-49,Female,Indian,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,7.0
+train/6474.jpg,30-39,Female,Indian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,7.0
+train/57653.jpg,40-49,Male,Indian,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,8.0
+train/6936.jpg,20-29,Male,Latino_Hispanic,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,8.0
+train/3590.jpg,20-29,Male,Black,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,9.0
+train/66099.jpg,30-39,Male,Indian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,9.0
+train/80100.jpg,30-39,Male,White,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,10.0
+train/5782.jpg,20-29,Male,Southeast Asian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,10.0
+train/11093.jpg,20-29,Male,East Asian,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,11.0
+train/2213.jpg,30-39,Male,Southeast Asian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,11.0
+train/19657.jpg,more than 70,Female,Indian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,12.0
+train/62081.jpg,20-29,Female,Latino_Hispanic,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,12.0
+train/50696.jpg,30-39,Male,White,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,13.0
+train/30671.jpg,20-29,Female,Southeast Asian,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,13.0
+train/56390.jpg,50-59,Male,Latino_Hispanic,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,14.0
+train/25146.jpg,50-59,Female,Southeast Asian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,14.0
+train/29335.jpg,20-29,Female,East Asian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,15.0
+train/77403.jpg,20-29,Female,Black,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,15.0
+train/27326.jpg,30-39,Male,East Asian,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,16.0
+train/14678.jpg,20-29,Female,East Asian,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,16.0
+train/65755.jpg,30-39,Female,Latino_Hispanic,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,17.0
+train/35707.jpg,40-49,Male,Latino_Hispanic,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,17.0
+train/35856.jpg,30-39,Female,Black,1.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,18.0
+train/7487.jpg,20-29,Female,Black,0.0,8cc60950-0fb3-42ef-903c-cdd373e1a2e0,18.0
