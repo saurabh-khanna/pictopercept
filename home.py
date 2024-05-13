@@ -7,7 +7,7 @@ import datetime
 import os
 
 # Set up the Streamlit page configuration and hide menu, footer, header
-st.set_page_config(page_icon="📷", page_title="PictoPercept")
+st.set_page_config(page_icon="📷", page_title="PictoPercept", layout="centered")
 st.markdown(
     """
     <style>
