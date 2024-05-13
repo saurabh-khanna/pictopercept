@@ -34,7 +34,7 @@ st.write("&nbsp;")
 TEXT = """
     Welcome to '📷 PictoPercept'! We study how humans make choices when navigating the internet.
 
-    Today, we ask you which of these two persons you might follow on social media. You must choose one person, and their profile picture is the only information you have. Who will you choose?
+    Today, we show you pictures of two persons at a time, and ask who of them you might follow on social media. You must choose one person, and their profile picture is the only information you have. Who will you choose?
 """
 
 countries = [
