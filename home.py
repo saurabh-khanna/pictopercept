@@ -34,7 +34,7 @@ st.write("&nbsp;")
 TEXT = """
     Welcome to '📷 PictoPercept'! We study how humans make choices when navigating the internet.
 
-    Today, we show you pictures of two persons at a time, and ask who of them you might follow on social media. You must choose one person, and their profile picture is the only information you have. Who will you choose?
+    Today, we show you pictures of two persons at a time, and ask who you might follow on social media. You must choose one person, and their profile picture is the only information you have. Who will you choose?
 """
 
 countries = [
@@ -408,7 +408,7 @@ if st.session_state["form_submitted"]:
 upload_toggle = st.toggle("Wish to help us improve?")
 if upload_toggle:
     st.write(
-        "Help us improve by uploading one or more images of a social media icon you follow."
+        "Help us improve by uploading one or more images of social media icons you follow."
     )
     imagelist = st.file_uploader(
         "Upload image(s).",
