@@ -4,6 +4,11 @@ import numpy as np
 import uuid
 import time
 import datetime
+import os
+import json
+from google.cloud import firestore
+from google.oauth2 import service_account
+import streamlit_analytics2 as streamlit_analytics
 
 # Set up the Streamlit page configuration and hide menu, footer, header
 st.set_page_config(page_icon="📷", page_title="PictoPercept", layout="centered")
@@ -24,6 +29,16 @@ st.sidebar.title("📷 PictoPercept")
 st.sidebar.info(
     "**Supported By** \n\n 🌱 Digital Communication Methods Lab, University of Amsterdam \n\n 🌱 Amsterdam School of Communication Research \n\n Reach out to [saurabh.khanna@uva.nl]() for questions/feedback."
 )
+
+
+# Check if the JSON file exists
+if os.path.exists('analytics.json'):
+    with open('analytics.json', 'r') as file:
+        json_data = file.read()
+    data = json.loads(json_data)
+    global_responses = data['widgets']['Person 1'] + data['widgets']['Person 2']
+    st.sidebar.info(f"Global responses till date: {global_responses}")
+
 
 st.sidebar.info(
     """**🐙 Team** \n\n [Saurabh Khanna](https://saurabh-khanna.github.io/) \n\n [Irene van Driel](https://www.uva.nl/profiel/d/r/i.i.vandriel/i.i.van-driel.html) \n\n [Sindy Sumter](https://www.uva.nl/en/profile/s/u/s.r.sumter/s.r.sumter.html) \n\n [Chei Billedo](https://www.uva.nl/profiel/b/i/c.j.billedo/c.j.billedo.html) \n\n [Lauren Taylor](https://www.uva.nl/en/profile/t/a/l.n.taylor/l.n.taylor.html) \n\n [Olga Eisele](https://www.uva.nl/profiel/e/i/o.e.eisele/o.e.eisele.html)"""
@@ -256,6 +271,7 @@ if "data" not in st.session_state:
     file_paths = ["./data/fairface/label_train.csv", "./data/fairface/label_val.csv"]
     df = pd.concat((pd.read_csv(file) for file in file_paths), ignore_index=True)
     df = df[df["service_test"] == True].drop("service_test", axis=1)
+    df = df[~df['age'].isin(['0-2', '3-9', '10-19'])]
     df = df.sample(frac=1).reset_index(drop=True)
     st.session_state.data = df
     st.session_state.index = 0
@@ -293,16 +309,17 @@ image2 = (
 
 with st.container(border=True):
     col1, col2 = st.columns(2, gap="large")
-    with col1:
-        button1 = st.button(
-            "Person 1", type="primary", key="btn1", use_container_width=True
-        )
-        st.image(image1, use_column_width="always")
-    with col2:
-        button2 = st.button(
-            "Person 2", type="primary", key="btn2", use_container_width=True
-        )
-        st.image(image2, use_column_width="always")
+    with streamlit_analytics.track(load_from_json="analytics.json", save_to_json="analytics.json"):
+        with col1:
+            button1 = st.button(
+                    "Person 1", type="primary", key="btn1", use_container_width=True
+                )
+        with col2:
+            button2 = st.button(
+                "Person 2", type="primary", key="btn2", use_container_width=True
+            )
+    col1.image(image1, use_column_width="always")
+    col2.image(image2, use_column_width="always")
 
 st.write("&nbsp;")
 
@@ -419,38 +436,62 @@ if upload_toggle:
     )
     st.session_state["n_images"] = len(imagelist)
 
+
 ### Check for button presses and record the clicks into db ###
 
+# authenticate to Firestore with own credentials
+key_dict = json.loads(st.secrets["textkey"])
+creds = service_account.Credentials.from_service_account_info(key_dict)
+db = firestore.Client(credentials=creds, project="pictopercept")
+
+# Firestore collection reference
+user_selections_col = db.collection('user_selections')
+
+def write_to_firestore(record):
+    """ Function to write a record to Firestore """
+    doc_ref = user_selections_col.document()  # Create a new document in Firestore
+    doc_ref.set(record)  # Set the document with the data from the record
+
+# Main button click handling and Firestore writing logic
 if button1 or button2:
     clicked_values = [1, 0] if button1 else [0, 1]
-    st.session_state.data.loc[current_index, "clicked"] = clicked_values[0]
-    st.session_state.data.loc[current_index + 1, "clicked"] = clicked_values[1]
-
     current_time = datetime.datetime.now()
-    st.session_state.data.loc[current_index : current_index + 1, "timestamp"] = (
-        current_time.strftime("%Y-%m-%d %H:%M:%S")
-    )
-
-    st.session_state.data.loc[current_index : current_index + 1, "userid"] = (
-        st.session_state.userid
-    )
-    st.session_state.data.loc[current_index : current_index + 1, "item"] = (
-        current_index // 2
-    ) + 1
-
-    st.session_state.data.loc[current_index : current_index + 1, "form_submitted"] = (
-        st.session_state["form_submitted"]
-    )
-    st.session_state.data.loc[current_index : current_index + 1, "n_images"] = (
-        st.session_state["n_images"]
-    )
-
-    selected_data = st.session_state.data.iloc[current_index : current_index + 2]
-    selected_data = pd.merge(
-        selected_data, st.session_state.df_demographics, on="userid", how="left"
-    )
-    # selected_data.to_csv(csv_file_path, mode='a', header=not os.path.exists(csv_file_path), index=False)
-
+    
+    # Generate records for Firestore
+    for idx, clicked in enumerate(clicked_values):
+        if len(st.session_state.df_demographics) > 0:
+            demographics_data = {
+                "your_age": int(st.session_state.df_demographics.iloc[0]["your_age"]),
+                "your_gender": st.session_state.df_demographics.iloc[0]["your_gender"],
+                "your_ethnicity": st.session_state.df_demographics.iloc[0]["your_ethnicity"],
+                "your_nationality": st.session_state.df_demographics.iloc[0]["your_nationality"],
+                "your_socialmedia": ", ".join(st.session_state.df_demographics.iloc[0]["your_socialmedia"].split(",")),
+                "your_email": st.session_state.df_demographics.iloc[0]["your_email"],
+            }
+        else:
+            demographics_data = {
+                "your_age": np.nan,
+                "your_gender": np.nan,
+                "your_ethnicity": np.nan,
+                "your_nationality": np.nan,
+                "your_socialmedia": np.nan,
+                "your_email": np.nan,
+            }
+        record = {
+            "file": st.session_state.data.iloc[current_index + idx]["file"],
+            "age": st.session_state.data.iloc[current_index + idx]["age"],
+            "gender": st.session_state.data.iloc[current_index + idx]["gender"],
+            "race": st.session_state.data.iloc[current_index + idx]["race"],
+            "clicked": clicked,
+            "timestamp": current_time.strftime("%Y-%m-%d %H:%M:%S"),
+            "userid": st.session_state.userid,
+            "item": (current_index // 2) + 1,
+            "form_submitted": st.session_state["form_submitted"],
+            "n_images": st.session_state["n_images"],
+            **demographics_data
+        }
+        write_to_firestore(record)
+    
     # Move to the next pair of images
     st.session_state.index += 2
     st.rerun()
