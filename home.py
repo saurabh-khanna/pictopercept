@@ -63,13 +63,13 @@ with tab1:
     )
     st.session_state.index = 0
 
-    image_files = [f for f in os.listdir("data/animalweb/") if f.endswith("_1.jpg")]
+    image_files = [f for f in os.listdir("data/animals/") if f.endswith("_1.jpg")]
     random.shuffle(image_files)
 
     # Choosing images
     current_index = st.session_state.index
-    image1 = "data/animalweb/" + image_files[current_index]
-    image2 = "data/animalweb/" + image_files[current_index + 1]
+    image1 = "data/animals/" + image_files[current_index]
+    image2 = "data/animals/" + image_files[current_index + 1]
 
     ### Main Buttons Display ###
 
