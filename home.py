@@ -1,40 +1,33 @@
 import streamlit as st
-import uuid
-import time
 
-def stream_data():
-    for word in TEXT.split(" "):
-        yield word + " "
-        time.sleep(0.1)
+# Set up the Streamlit page configuration and hide the menu, footer, and header
+st.set_page_config(page_icon="📷", page_title="PictoPercept", layout="centered")
 
-col1, col2 = st.columns([1, 1])
-
-with col1:
-    TEXT = """
-    Welcome to PictoPercept! We study human preferences in an increasingly digitized world.
-    
-    We create choice scenarios, where we can make choices by comparing two images 👀. Try some scenarios out...
+st.markdown(
     """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
-    # Initialize user ID and display text
-    if "userid" not in st.session_state:
-        st.session_state.userid = str(uuid.uuid4())
-        st.write(stream_data)
-    else:
-        st.write(TEXT)
-    
-    # Create a "Go" button to navigate to the selected page
-    if st.button("🎒 Jobs and occupations"):
-        st.switch_page("jobs.py")
-    if st.button("🤩 Social media icons"):
-        st.switch_page("icons.py")
-    if st.button("🐙 Non-human species"):
-        st.switch_page("species.py")
-    if st.button("🦋 Attraction"):
-        st.switch_page("attraction.py")
-    if st.button("🎞️ Film casts"):
-        st.switch_page("filmcast.py")
+st.title("📷 PictoPercept")
+st.write("&nbsp;")
 
-with col2:
-    with st.container(border=True):
-        st.image("changeface.gif")
+home_page = st.Page("pictopercept.py", title="Home")
+jobs_page = st.Page("jobs.py", title="Jobs and occupations", icon="🎒")
+icons_page = st.Page("icons.py", title="Social media icons", icon="🤩")
+species_page = st.Page("species.py", title="Non-human species", icon="🐙")
+attraction_page = st.Page("attraction.py", title="Attraction", icon="🦋")
+filmcast_page = st.Page("filmcast.py", title="Film cast", icon="🎞️")
+
+pg = st.navigation([home_page, jobs_page, icons_page, species_page, attraction_page, filmcast_page])
+
+st.sidebar.info(
+    "**Supported By** \n\n 🌱 Digital Communication Methods Lab, University of Amsterdam \n\n 🌱 Amsterdam School of Communication Research \n\n Reach out to [saurabh.khanna@uva.nl](mailto:saurabh.khanna@uva.nl) for questions/feedback/collaboration."
+)
+
+pg.run()
