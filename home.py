@@ -13,7 +13,7 @@ with col1:
     TEXT = """
     Welcome to PictoPercept! We study human preferences in an increasingly digitized world.
     
-    We create choice scenarios, where we can make choices by comparing two images 👀. Try some scenarios out.
+    We create choice scenarios, where we can make choices by comparing two images 👀. Try some scenarios out...
     """
 
     # Initialize user ID and display text
@@ -23,17 +23,17 @@ with col1:
     else:
         st.write(TEXT)
     
-    # # Create a "Go" button to navigate to the selected page
-    # if st.button("🎒 Jobs and occupations"):
-    #     st.switch_page("jobs.py")
-    # if st.button("🤩 Social media icons"):
-    #     st.switch_page("icons.py")
-    # if st.button("🐙 Non-human species"):
-    #     st.switch_page("species.py")
-    # if st.button("🦋 Attraction"):
-    #     st.switch_page("attraction.py")
-    # if st.button("🎞️ Film casts"):
-    #     st.switch_page("filmcast.py")
+    # Create a "Go" button to navigate to the selected page
+    if st.button("🎒 Jobs and occupations"):
+        st.switch_page("jobs.py")
+    if st.button("🤩 Social media icons"):
+        st.switch_page("icons.py")
+    if st.button("🐙 Non-human species"):
+        st.switch_page("species.py")
+    if st.button("🦋 Attraction"):
+        st.switch_page("attraction.py")
+    if st.button("🎞️ Film casts"):
+        st.switch_page("filmcast.py")
 
 with col2:
     with st.container(border=True):
