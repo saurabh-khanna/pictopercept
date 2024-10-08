@@ -11,9 +11,9 @@ col1, col2 = st.columns([1, 1])
 
 with col1:
     TEXT = """
-    Welcome to PictoPercept! We study human preferences in an increasingly digitized world.
+    Welcome to PictoPercept! We study human preferences in an increasingly digitized world. 
     
-    We create choice scenarios, where we can make choices by comparing two images 👀. Try some scenarios out...
+    We create choice scenarios, where you can make choices by comparing two images 👀. Try some scenarios out...
     """
 
     # Initialize user ID and display text
@@ -30,10 +30,10 @@ with col1:
         st.switch_page("icons.py")
     if st.button("🐙 Non-human species"):
         st.switch_page("species.py")
-    if st.button("🦋 Attraction"):
-        st.switch_page("attraction.py")
     if st.button("🎞️ Film casts"):
         st.switch_page("filmcast.py")
+    if st.button("🦋 Attraction"):
+        st.switch_page("attraction.py")
 
 with col2:
     with st.container(border=True):
