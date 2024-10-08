@@ -27,7 +27,7 @@ attraction_page = st.Page("attraction.py", title="Attraction", icon="🦋")
 pg = st.navigation([home_page, jobs_page, icons_page, species_page, filmcast_page, attraction_page])
 
 st.sidebar.info(
-    "**Supported By** \n\n 🌱 Digital Communication Methods Lab, University of Amsterdam \n\n 🌱 Amsterdam School of Communication Research \n\n Reach out to [saurabh.khanna@uva.nl](mailto:saurabh.khanna@uva.nl) for questions/feedback/collaboration."
+    "**Supported By** \n\n 🌱 Digital Communication Methods Lab, University of Amsterdam \n\n 🌱 Amsterdam School of Communication Research \n\n We do not save any identifiable information on this platform. Reach out to [saurabh.khanna@uva.nl](mailto:saurabh.khanna@uva.nl) for questions/feedback/collaboration."
 )
 
 pg.run()

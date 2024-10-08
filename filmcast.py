@@ -103,7 +103,7 @@ if st.session_state.consent_given_film and not st.session_state.survey_ended:
 
 
     st.write("&nbsp;")
-    progress_bar = st.progress(0)
+    progress_bar = st.progress(0, text="⏰ Try to answer as fast as you can.")
 
     ## Exit button ##
     st.write("&nbsp;")    
@@ -114,11 +114,11 @@ if st.session_state.consent_given_film and not st.session_state.survey_ended:
         # Update the progress bar incrementally (each step is 20% progress)
         if i == 1:
             time.sleep(1)
-            progress_text = "🕰️ Try to answer as fast as you can. Time taken: " + str(i) + " second"
+            progress_text = "⏰ Try to answer as fast as you can. Time taken: " + str(i) + " second"
         elif i == 5:
-            progress_text = ":red[🕰️ Try to answer as fast as you can. Time taken: More than " + str(i) + " seconds!]"
+            progress_text = ":red[⏰ Try to answer as fast as you can. Time taken: More than " + str(i) + " seconds!]"
         else:
-            progress_text = "🕰️ Try to answer as fast as you can. Time taken: " + str(i) + " seconds"
+            progress_text = "⏰ Try to answer as fast as you can. Time taken: " + str(i) + " seconds"
         progress_bar.progress(i * 20, text=progress_text)  # i goes from 1 to 5, converting to percentage (20, 40, ..., 100)
         time.sleep(1)
     

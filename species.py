@@ -90,11 +90,11 @@ if st.session_state.consent_given_animal and not st.session_state.survey_ended:
         col1, col2 = st.columns(2, gap="large")
         with col1:
             button1 = st.button(
-                "Person 1", type="primary", key="btn1", on_click=save_response, args=[1], use_container_width=True
+                "Species 1", type="primary", key="btn1", on_click=save_response, args=[1], use_container_width=True
             )
         with col2:
             button2 = st.button(
-                "Person 2", type="primary", key="btn2", on_click=save_response, args=[2], use_container_width=True
+                "Species 2", type="primary", key="btn2", on_click=save_response, args=[2], use_container_width=True
             )
         
         col1.image(image1, use_column_width="always")
@@ -102,7 +102,7 @@ if st.session_state.consent_given_animal and not st.session_state.survey_ended:
 
 
     st.write("&nbsp;")
-    progress_bar = st.progress(0)
+    progress_bar = st.progress(0, text="⏰ Try to answer as fast as you can.")
 
     ## Exit button ##
     st.write("&nbsp;")    
@@ -113,11 +113,11 @@ if st.session_state.consent_given_animal and not st.session_state.survey_ended:
         # Update the progress bar incrementally (each step is 20% progress)
         if i == 1:
             time.sleep(1)
-            progress_text = "🕰️ Try to answer as fast as you can. Time taken: " + str(i) + " second"
+            progress_text = "⏰ Try to answer as fast as you can. Time taken: " + str(i) + " second"
         elif i == 5:
-            progress_text = ":red[🕰️ Try to answer as fast as you can. Time taken: More than " + str(i) + " seconds!]"
+            progress_text = ":red[⏰ Try to answer as fast as you can. Time taken: More than " + str(i) + " seconds!]"
         else:
-            progress_text = "🕰️ Try to answer as fast as you can. Time taken: " + str(i) + " seconds"
+            progress_text = "⏰ Try to answer as fast as you can. Time taken: " + str(i) + " seconds"
         progress_bar.progress(i * 20, text=progress_text)  # i goes from 1 to 5, converting to percentage (20, 40, ..., 100)
         time.sleep(1)
     
