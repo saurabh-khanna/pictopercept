@@ -1,10 +1,8 @@
 # 📷 PictoPercept
 
-Welcome to PictoPercept! We study human preferences in an increasingly digitized world. We create choice scenarios, where you can make choices by comparing two images 👀.
+Welcome to PictoPercept! We study human preferences in an increasingly digitized world. We create choice scenarios, where you make choices by comparing pairs of AI-generated images in limited time frames.
 
-![](data/sample_image.png)
-
-
+![image](https://github.com/user-attachments/assets/a3721551-3918-43a8-9d6c-26c28e1a5d61)
 
 **🐙 Team** 
 
@@ -19,7 +17,7 @@ Welcome to PictoPercept! We study human preferences in an increasingly digitized
 
 **🌱 Supported By**
 
+- Amsterdam School of Communication Research, University of Amsterdam
 - Digital Communication Methods Lab, University of Amsterdam 
-- Amsterdam School of Communication Research 
-
-Reach out to [saurabh.khanna@uva.nl](mailto:saurabh.khanna@uva.nl) for questions/feedback/collaboration.
+ 
+Reach out to [saurabh.khanna@uva.nl](mailto:saurabh.khanna@uva.nl) with feedback and/or questions.
